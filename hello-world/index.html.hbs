@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Congratulations | Cloud Run</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="preload" as="font">
-<link href="/static/cloud-run-32-color.png" rel="icon" type="image/png" />
-<link href="/static/style.css" rel="stylesheet" type="text/css" />
+<link href="/assets/cloud-run-32-color.png" rel="icon" type="image/png" />
+<link href="/assets/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -14,20 +14,20 @@
 		<div class="hero">
 			<div style="text-align:center;">
 				<picture>
-					<source srcset="/static/celebration-dark.svg" media="(prefers-color-scheme: dark)">
-					<img src="/static/celebration.svg" alt="A group celebrating" width="427" height="231">
+					<source srcset="/assets/celebration-dark.svg" media="(prefers-color-scheme: dark)">
+					<img src="/assets/celebration.svg" alt="A group celebrating" width="427" height="231">
 				</picture>
 			</div>
 
 			<div class="message">
-				<h1>{{message}}</h1>
+				<h1>It's running!</h1>
 				<h2>Congratulations, you successfully deployed a container image to Cloud Run</h2>
 			</div>
 		</div>
 
 		<div class="details">
 			<p>
-                This created the revision <code>{{Revision}}</code> of the Cloud Run service <code>{{Service}}</code>.
+                This created the revision <code>{{revision}}</code> of the Cloud Run service <code>{{service}}</code>.
             </p>
 
 			<p class="callout">
@@ -67,6 +67,7 @@
 					CLOUD CODE ON CLOUD SHELL
 				</a>
 			</p>
+
 		</div>
 	</div>
 </body>
